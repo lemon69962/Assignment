@@ -1,4 +1,3 @@
-
 import Department.Department;
 import Employee.Employee;
 public class HRAppclass {
@@ -8,15 +7,15 @@ public class HRAppclass {
         Employee s1 = new Employee(69, "Voon Xien", 56000);
         Employee s2 = new Employee(70, "Kai Jie", 40000);
 
-
         Department d1 = new Department("BUSSINESS");
         d1.addEmployee(s1);
         d1.addEmployee(s2);
 
         Employee[] employees = d1.getEmployees();
         for (Employee employee : employees) {
-            System.out.println("Employee "+employee);
+            if (employee != null) {  // Only print if employee is not null
+                System.out.println("Employee " + employee);
+            }
         }
     }
-
 }
