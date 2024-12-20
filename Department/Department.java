@@ -51,5 +51,18 @@ public class Department {
         return null;
     }
 
-    
+    public double getDepartmentSalary(){
+        double totalSalary = 0;
+        for(int i=0; i<lastAdditionalEmployeeIndex; i++){
+            totalSalary += employees[i].getSalary();
+        }
+        return totalSalary;
+    }
+
+    public double getAverageSalary(){
+        if(lastAdditionalEmployeeIndex > -1){
+            return getDepartmentSalary() / (lastAdditionalEmployeeIndex + 1);
+        }
+        return 0;
+    }
 }
