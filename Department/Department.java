@@ -44,7 +44,7 @@ public class Department {
     public Employee getEmployeeID(int id){
 
         for(Employee employee : employees){
-            if(employee.getID() == id){
+            if(employee != null && employee.getID() == id){
                 return employee;
             }
         }

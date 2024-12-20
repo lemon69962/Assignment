@@ -20,6 +20,7 @@ public class HRAppclass {
             }
         }
         System.out.println("Total Salary: RM" + d1.getDepartmentSalary());
-        System.out.println("Average Salary: RM" + d1.getAverageSalary());
+        System.out.printf("Average Salary: RM%.2f%n", d1.getAverageSalary());
+        System.out.println("Employee: " + d1.getEmployeeID(720));
     }
 }
