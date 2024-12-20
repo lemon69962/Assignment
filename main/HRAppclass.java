@@ -7,6 +7,7 @@ public class HRAppclass {
         Employee s2 = new Employee(70, "Kai Jie", 40000);
 
         System.out.println(s1);
+        System.out.println(s2);
 
     }
 

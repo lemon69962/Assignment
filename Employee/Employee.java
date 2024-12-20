@@ -1,18 +1,18 @@
 package Employee;
 
 public class Employee{
-    private int ID;
+    private int id;
     private String name;
     private double salary;
 
-    public Employee(int ID, String name, double salary){
-        this.ID = ID;
+    public Employee(int id, String name, double salary){
+        this.id = id;
         this.name = name;
         this.salary = salary;
     }
 
     public int getID(){
-        return ID;
+        return id;
     }
 
     public String getName(){
@@ -23,8 +23,8 @@ public class Employee{
         return salary;
     }
 
-    public void setID(int ID){
-        this.ID = ID;
+    public void setID(int id){
+        this.id = id;
     }
 
     public void setName(String name){
