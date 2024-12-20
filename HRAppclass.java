@@ -1,5 +1,6 @@
 
 import Employee.Employee;
+import Department.Department;
 public class HRAppclass {
 
     public static void main(String[] args) {
