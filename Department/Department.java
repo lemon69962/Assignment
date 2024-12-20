@@ -25,4 +25,31 @@ public class Department {
             employees[lastAdditionalEmployeeIndex] = plusEmployee;
         }
     }
+
+    public Employee [] getEmployees(){
+        
+        Employee[] realEmployees = new Employee[lastAdditionalEmployeeIndex + 1];
+        for(int i=0; i<realEmployees.length; i++){
+            realEmployees[i] = employees[i];
+        }
+
+        return employees;
+    }
+
+    public int getLastEmployee(){
+
+        return lastAdditionalEmployeeIndex+1;
+    }
+
+    public Employee getEmployeeID(int id){
+
+        for(Employee employee : employees){
+            if(employee.getID() == id){
+                return employee;
+            }
+        }
+        return null;
+    }
+
+    
 }
