@@ -20,5 +20,6 @@ public class HRAppclass {
             }
         }
         System.out.println("Total Salary: RM" + d1.getDepartmentSalary());
+        System.out.println("Average Salary: RM" + d1.getAverageSalary());
     }
 }
