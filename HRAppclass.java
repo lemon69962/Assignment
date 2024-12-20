@@ -19,5 +19,6 @@ public class HRAppclass {
                 System.out.println("Employee " + employee);
             }
         }
+        System.out.println("Total Salary: " + d1.getDepartmentSalary());
     }
 }
