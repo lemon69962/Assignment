@@ -36,6 +36,6 @@ public class Employee{
     }
 
     public String toString(){
-        return "Employee: " + getID() + ", Name: " + getName() + ", Salary: " + getSalary();
+        return "Employee: " + getID() + ", Name: " + getName() + ", Salary: RM" + getSalary();
     }
 }
