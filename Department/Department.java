@@ -65,4 +65,8 @@ public class Department {
         }
         return 0;
     }
+
+    public String toString(){
+        return "Department: " + name;
+    }
 }
