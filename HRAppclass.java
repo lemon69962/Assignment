@@ -1,5 +1,5 @@
-import Department.Department;
-import Employee.Employee;
+import department.Department;
+import Employee.Employee;  
 public class HRAppclass {
 
     public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class HRAppclass {
         d1.addEmployee(s2);
         d1.addEmployee(s3);
 
-        Employee[] employees = d1.getEmployees();
+        Employee [] employees = d1.getEmployees();
         for (Employee employee : employees) {
             if (employee != null) {
                 System.out.println("Employee " + employee);

@@ -1,4 +1,4 @@
-package Department;
+package department;
 
 public class hrDepartment {
     

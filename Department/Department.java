@@ -1,5 +1,7 @@
-package Department;
+package department;
+
 import Employee.Employee;
+
 public class Department {
     private String name;
 
@@ -41,10 +43,9 @@ public class Department {
         return lastAdditionalEmployeeIndex+1;
     }
 
-    public Employee getEmployeeID(int id){
-
+    public Employee getEmployeeById(int id){
         for(Employee employee : employees){
-            if(employee.getID() == id){
+            if(employee != null && employee.getId() == id){
                 return employee;
             }
         }
@@ -53,16 +54,18 @@ public class Department {
 
     public double getDepartmentSalary(){
         double totalSalary = 0;
-        for(int i=0; i<lastAdditionalEmployeeIndex+1; i++){
-            totalSalary += employees[i].getSalary();
+        for(Employee employee : employees){
+            if(employee != null){
+                totalSalary += employee.getSalary();
+            }
         }
         return totalSalary;
     }
 
     public double getAverageSalary(){
-        if(lastAdditionalEmployeeIndex > -1){
-            return getDepartmentSalary() / (lastAdditionalEmployeeIndex + 1);
+        if(lastAdditionalEmployeeIndex < 0){
+            return 0.0;
         }
-        return 0;
+        return getDepartmentSalary() / (lastAdditionalEmployeeIndex + 1);
     }
 }
